@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmirthaLiz Software - Empowering Small Businesses</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #2563eb 0%, #4338ca 100%);
+        }
+        .animate-counter {
+            animation: countUp 2s ease-out;
+        }
+        @keyframes countUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .hover-lift:hover {
+            transform: translateY(-8px);
+        }
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-slate-200 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">AL</span>
+                    </div>
+                    <span class="text-xl font-bold text-slate-900">AmirthaLiz</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-slate-600 hover:text-blue-600 transition-colors">Home</a>
+                    <a href="#" class="text-slate-600 hover:text-blue-600 transition-colors">Services</a>
+                    <a href="#" class="text-slate-600 hover:text-blue-600 transition-colors">Portfolio</a>
+                    <a href="#" class="text-slate-600 hover:text-blue-600 transition-colors">Team</a>
+                    <a href="#" class="text-slate-600 hover:text-blue-600 transition-colors">Contact</a>
+                </div>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                    Get Started
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-20 pb-16 px-4 relative overflow-hidden">
+        <div class="absolute inset-0 gradient-bg opacity-50"></div>
+        <div class="max-w-6xl mx-auto relative">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
+                            Empowering Small Businesses Through 
+                            <span class="text-blue-600 relative">
+                                Smart Technology
+                                <div class="absolute -bottom-2 left-0 w-full h-1 bg-blue-200 rounded-full"></div>
+                            </span>
+                        </h1>
+                        <p class="text-xl text-slate-600 leading-relaxed">
+                            Transform your business with custom web applications, mobile solutions, and AI-powered tools 
+                            that drive growth and compete in today's digital marketplace.
+                        </p>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center space-x-2 group">
+                            <span>Get Free Consultation</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                        </button>
+                        <button class="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-4 rounded-lg transition-all duration-300">
+                            View Our Work
+                        </button>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-8 pt-8">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-blue-600 animate-counter">150+</div>
+                            <p class="text-sm text-slate-600">Happy Clients</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-blue-600 animate-counter">200+</div>
+                            <p class="text-sm text-slate-600">Projects Completed</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-blue-600">5+</div>
+                            <p class="text-sm text-slate-600">Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="relative aspect-video rounded-2xl overflow-hidden shadow-2xl bg-slate-100">
+                        <img
+                            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                            alt="AmirthaLiz Software Team Working"
+                            class="w-full h-full object-cover"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent"></div>
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 w-24 h-24 bg-blue-600 rounded-full flex items-center justify-center shadow-xl">
+                        <i data-lucide="star" class="w-8 h-8 text-white fill-current"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16 px-4 bg-slate-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+                    Why Small Businesses Choose AmirthaLiz
+                </h2>
+                <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+                    We understand the unique challenges facing small businesses and provide 
+                    tailored technology solutions that deliver real results.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 hover-lift">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
+                        <i data-lucide="award" class="w-8 h-8 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Affordable Excellence</h3>
+                    <p class="text-slate-600 leading-relaxed">Enterprise-quality solutions designed for small business budgets with transparent pricing.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 hover-lift">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center">
+                        <i data-lucide="users" class="w-8 h-8 text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Local Focus</h3>
+                    <p class="text-slate-600 leading-relaxed">We understand the unique challenges facing small and medium businesses in your area.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 hover-lift">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-purple-100 rounded-full flex items-center justify-center">
+                        <i data-lucide="zap" class="w-8 h-8 text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Rapid Delivery</h3>
+                    <p class="text-slate-600 leading-relaxed">Quick turnaround times that get your business online fast without compromising quality.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 hover-lift">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-orange-100 rounded-full flex items-center justify-center">
+                        <i data-lucide="check-circle" class="w-8 h-8 text-orange-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Partnership Approach</h3>
+                    <p class="text-slate-600 leading-relaxed">We're not just developers; we're your technology partners for long-term success.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 hover-lift">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-red-100 rounded-full flex items-center justify-center">
+                        <i data-lucide="clock" class="w-8 h-8 text-red-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Ongoing Support</h3>
+                    <p class="text-slate-600 leading-relaxed">Comprehensive maintenance and support to keep your systems running smoothly 24/7.</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 hover-lift">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-teal-100 rounded-full flex items-center justify-center">
+                        <i data-lucide="star" class="w-8 h-8 text-teal-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Proven Results</h3>
+                    <p class="text-slate-600 leading-relaxed">Track record of helping businesses increase efficiency, revenue, and customer satisfaction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 px-4 hero-gradient">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                Ready to Transform Your Business?
+            </h2>
+            <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+                Join over 150 successful small businesses who have grown with our technology solutions. 
+                Get your free consultation today.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    Schedule Free Consultation
+                </button>
+                <button class="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-lg transition-all duration-300">
+                    Call (408) 555-0127
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">AL</span>
+                        </div>
+                        <span class="text-xl font-bold">AmirthaLiz</span>
+                    </div>
+                    <p class="text-slate-400">Empowering small businesses through smart technology solutions.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Services</h4>
+                    <ul class="space-y-2 text-slate-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Web Development</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Mobile Apps</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">AI Solutions</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Consulting</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Company</h4>
+                    <ul class="space-y-2 text-slate-400">
+                        <li><a href="#" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Team</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Portfolio</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-slate-400">
+                        <li>Email: info@amirthaliz.com</li>
+                        <li>Phone: (408) 555-0127</li>
+                        <li>Location: Rochester, NY</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400">
+                <p>© 2024 AmirthaLiz Software. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // Simple counter animation
+        function animateCounters() {
+            const counters = document.querySelectorAll('.animate-counter');
+            counters.forEach(counter => {
+                const target = parseInt(counter.textContent.replace('+', ''));
+                let current = 0;
+                const increment = target / 50;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.textContent = target + '+';
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.floor(current) + '+';
+                    }
+                }, 40);
+            });
+        }
+        
+        // Run counter animation when page loads
+        window.addEventListener('load', animateCounters);
+    </script>
+</body>
+</html>
